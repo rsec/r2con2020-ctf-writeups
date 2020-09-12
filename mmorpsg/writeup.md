@@ -14,7 +14,7 @@ Since the challenge didn't got many solves, I have created a detailed write-up t
 * Start analysing the inputs of the program
 * There are several vulnerabilities, and therefore, several ways to exploit it
 * You can crash the program manually. That will give you an important clue!
-* The Heap was involved but you don't need to mess with the Heap metadata. It is an easy challenge, so keep it simple.
+* The heap was involved but you don't need to mess with the heap metadata. It is an easy challenge, so keep it simple.
 * No need to craft your own shellcode. The challenge gives you what you need.
 * Hint released during the CTF with some highlighted words:
 > If you want to be the **winner**, just *use* the **table** *after* clean it up.
@@ -254,11 +254,11 @@ So after all the explanations, the exploit looks like this:
    1. At the end of the round, answer `no` so the opponent is destroyed
 3. Set the user's nickname `1`
    1. Select a length of `36`
-   2. Input as nick name `0x408dc0 + AAAAAAAA`
+   2. Input as nick name the target address `0x00408dc0`
 4. Play another round `3`
    1. GET A SHELL
 
-Not difficult right ;) The full exploit in python can be found HERE.
+Was not that difficult right? ;) The full exploit in python can be found HERE.
 
 I hope you enjoy playing!!!
 

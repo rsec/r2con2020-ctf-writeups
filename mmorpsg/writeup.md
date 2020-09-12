@@ -246,6 +246,7 @@ In a normal game, when the opponent object is allocated, `[obj.player]` points t
 
 ![set_nickname2](img/vt1.png)
 
+# The Exploit
 
 So after all the explanations, the exploit looks like this:
 
@@ -258,7 +259,7 @@ So after all the explanations, the exploit looks like this:
 4. Play another round `3`
    1. GET A SHELL
 
-Was not that difficult right? ;) The full exploit in python can be found HERE.
+Was not that difficult right? ;) The full exploit in python can be found [HERE](solution.py).
 
 I hope you enjoy playing!!!
 
